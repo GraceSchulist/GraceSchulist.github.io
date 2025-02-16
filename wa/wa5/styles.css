@@ -1,0 +1,143 @@
+
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: url("simone-biles.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 100%;
+    
+}
+
+.bottom-overlay {
+    background-color: navy;
+    display: block;
+    position: fixed;
+    top: 685px;
+    left: 25px;
+    width: 970px;
+    height: fit-content; 
+    align-items: center;
+    padding: 15px;
+
+    border-style: ridge;
+    border-width: 10px;
+    border-color: red;
+
+    color: white;
+}
+
+.deductions-block, .start-val-block {
+    display: inline-block;
+    background-color:blue;
+    width: 300px;
+    height: 70px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.deductions-block h2, .start-val-block h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    font-size: 35px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 0px;
+}
+
+.deductions-block p, .start-val-block p {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: block;
+    font-size: 60px;
+    line-height: 0px;
+    margin-top: 75px;
+}
+
+.final-score-block {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    background-color: white;
+    width: 280px;
+    height: 120px;
+    text-align: center;
+    border-style: solid;
+    border-color: red;
+    padding: 20px;
+    border-width: 4px;
+
+}
+
+#final-score-label {
+    font-size: 50px;
+    color: red;
+    padding: 0px;
+    margin: 0px;
+}
+
+#final-score-num {
+    color: red;
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.right-overlay {
+    background-color: navy;
+    display: block;
+    position: fixed;
+    top: 25px;
+    left: 1025px;
+    width: 400px;
+    height: 200px; 
+    padding: 15px;
+
+    border-style: ridge;
+    border-width: 10px;
+    border-color: red;
+    color: white;
+}
+
+.standings-block {
+    display: inline-block;
+    width: 160px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+#standings-label, #next-label {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 25px;
+    margin: 0px;
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+}
+
+.standings-block ol li {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 30px;
+
+}
+
+.next-block {
+    display: inline-block;
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.next-block ol li {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;    
+}
+
