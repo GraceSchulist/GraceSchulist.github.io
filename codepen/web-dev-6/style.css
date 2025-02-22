@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(200, 200, 250);
+}
+
+.label {
+  margin: 30px;
+  color: darkviolet;
+  font-size: 30px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(255,255,255,0.5);
+  border-style:ridge;
+  border-color:darkviolet;
+  border-width: 12px;
+  padding: 30px;
+}
