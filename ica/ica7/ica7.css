@@ -16,66 +16,78 @@ body{
 #box2{
     top: 50px;
     left: 50px;
-    width: 25vw;
+    width: 10vw;
     height:20vh;
     position: relative;
     background-color: orangered;
     animation-name: box2move;
-    animation-duration: 4s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes box2move{
     0% {
         top: 50px;
         left: 50px;
+        transform: rotate(0deg);
     }
     10% {
         top: 100px;
         left: 50px;
+        transform: rotate(0deg);
     }
 
     20% {
         top: 150px;
         left: 50px;
+        transform: rotate(0deg);
     }
 
     30% {
         top: 150px;
         left: 100px;
+        transform: rotate(0deg);
     }
 
     40% {
         top: 150px;
         left: 150px;
+        transform: rotate(0deg);
     }
 
     50% {
         top: 100px;
         left: 150px;
+        transform: rotate(0deg);
     }
 
     60% {
         top: 50px;
         left: 150px;
+        transform: rotate(0deg);
     }
 
     70% {
         top: 50px;
         left: 100px;
+        transform: rotate(0deg);
     }
 
     80% {
         top: 50px;
         left: 50px;
+        transform: rotate(0deg);
     }
 
     90% {
         top: 0px;
         left: 50px;
+        transform: rotate(360deg);
     }
 
     100% {
         top: 50px;
         left: 50px;
+        transform: rotate(360deg);
     }
 }
