@@ -1,0 +1,127 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --hue: 40;
+  --sat: 100%;
+  --primary1: hsl(var(--hue),var(--sat),90%);
+  --primary5: hsl(var(--hue),var(--sat),50%);
+  --primary9: hsl(var(--hue),var(--sat),10%);
+  --red: hsl(50,90%,50%);
+  --teal: hsl(1000,90%,50%);
+  --purple: hsl(70,90%,30%);
+  --trans-dur: 0.3s;
+  color-scheme: light dark;
+  font-size: clamp(1rem,0.9rem + 0.5vw,1.5rem);
+}
+
+body {
+  background-color: hsl(0, 99%, 20%);
+  color: light-dark(var(--primary9), var(--primary1));
+  display: flex;
+  font: 1em/1.5 sans-serif;
+  height: 100vh;
+  transition: background-color var(--trans-dur), color var(--trans-dur);
+}
+
+.pl {
+  display: block;
+  margin: auto;
+  width: 16em;
+  height: auto;
+}
+.pl__curve, .pl__dot, .pl__scene {
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+  animation-iteration-count: infinite;
+}
+.pl__curve, .pl__dot {
+  transition: stroke var(--trans-dur);
+}
+.pl__curve {
+  animation-name: curve-offset;
+  stroke: var(--primary5);
+}
+.pl__layer + .pl__layer .pl__curve {
+  stroke: var(--teal);
+}
+.pl__dot {
+  animation-name: dot-move;
+  stroke: var(--red);
+}
+.pl__layer + .pl__layer .pl__dot {
+  stroke: var(--purple);
+}
+.pl__scene {
+  animation-name: scene-move;
+  animation-timing-function: linear;
+}
+
+/* Animations */
+@keyframes curve-offset {
+  from {
+    stroke-dashoffset: 25.12;
+  }
+  46% {
+    stroke-dashoffset: 0;
+  }
+  92%, to {
+    stroke-dashoffset: -24.97;
+  }
+}
+@keyframes dot-move {
+  from, 25% {
+    stroke-dashoffset: 0;
+  }
+  50%, to {
+    stroke-dashoffset: -15.99;
+  }
+}
+@keyframes scene-move {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-16px, 0);
+  }
+}
+
+header h1 {
+  animation-name:showTitle;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  top: -300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: darkred;
+  background-color: white;
+  border-style: dashed;
+  border-color: orange;
+  border-width: 10px;
+  padding: 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper .animation {
+  margin: auto;
+}
+
+@keyframes showTitle {
+  from {
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(0px,250px);
+  }
+}
