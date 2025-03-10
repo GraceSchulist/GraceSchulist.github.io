@@ -1,0 +1,106 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "concert1-container concert1-img"
+    "concert2-img concert2-container"
+    "concert3-container concert3-img"
+    "concert4-img concert4-container"
+    "concert5-container concert5-img"
+    "concert6-img concert6-container"
+    "concert7-container concert7-img"
+    "concert8-img concert8-container"
+    "concert9-container concert9-img"
+    "concert10-img concert10-container";
+    grid-gap: 0;
+    background-color: rgb(59, 65, 99);
+    margin: 0;
+}
+
+header {
+    background-image: url(background3.jpeg);
+    background-repeat: repeat-y;
+    background-size:100vw;
+    height: 200.5vh;
+
+    color: white;
+    padding: 5px;
+    /* border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 4px;*/
+    text-align: center;
+    padding-bottom: 0px;
+    margin: 0;
+    
+}
+
+header h1 {
+    width: 80vw;
+    word-wrap: break-word;
+    font-size: 120px;
+    margin-top: 25vh;
+    margin-bottom: 5vh;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#presents {
+    background-color: white;
+    width: 36vw;
+    padding: 20px;
+    padding-bottom: 10px;
+    color: black;
+    margin-top: 40vh;
+    text-align: left;
+    font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;     
+    font-weight: 600;
+    font-size: 5vw;
+    padding-left: 20px;
+}
+
+#introduction {
+    width: 100vw;
+    color: white;
+    font-size: 8vw;
+    text-align: left;
+    font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;     
+    font-weight: 600;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+.description-label {
+    background:linear-gradient(to bottom, rgb(1,3,26,100),rgb(59, 65, 99));
+    height: 30vh;
+    margin: 0;
+}
+
+.description-label h2 {
+    margin: 0 auto;
+    width: 50vw;
+    background-color: white;
+    color: black;
+    font-size: 50px;
+    margin-top: 30vh;
+    padding: 10px;
+}
+
+.concert1-container {
+    background-color: rgb(59,65,99);
+    color: white;
+}
+
+.concert2-container {
+  
+    background-color: rgb(151, 159, 201);
+    color: black;
+}
+
