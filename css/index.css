@@ -132,12 +132,18 @@ header h1 {
     background-color: rgb(140, 112, 181); */
     background-color: rgb(255, 229, 99);
     border-color: white;
+    font-size: 25px;
 
 }
 
 .gill-font {
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
-    font-size: 22px;
+    font-size: 30px;
+}
+
+.concert-title {
+    
+    font-size: 38px;
 }
 
 /* .reversed-info {
@@ -157,7 +163,7 @@ header h1 {
     padding: 10px;
     margin: 20px;
     font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;     
-    line-height: 30px;
+    line-height: 35px;
     font-size: 22px;
     font-weight:500;
 }
@@ -183,7 +189,6 @@ header h1 {
     background-color: rgb(2, 4, 38);
     height: 5vh;
     color: white;
-    margin: 0 auto;
     text-align: center;
     font-size: 30px;
     width: 10vw;
@@ -192,6 +197,8 @@ header h1 {
     border-style: solid;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
     font-weight: 600;
+    margin-left: 88vw;
+    padding-top: 20px;
 }
 
 
