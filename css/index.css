@@ -20,7 +20,7 @@ header {
     background-image: url(background3.jpeg);
     background-repeat: repeat-y;
     background-size:100vw;
-    height: 187vh;
+    height: 190vh;
 
     color: white;
     padding: 5px;
@@ -191,13 +191,13 @@ header h1 {
     color: white;
     text-align: center;
     font-size: 30px;
-    width: 15vw;
+    width: 20vw;
     padding: 5px;
     border-radius: 20px;
     border-style: solid;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
     font-weight: 600;
-    margin-left: 82vw;
+    margin-left: 75vw;
     padding-top: 20px;
 }
 
