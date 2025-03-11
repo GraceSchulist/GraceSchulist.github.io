@@ -20,7 +20,7 @@ header {
     background-image: url(background3.jpeg);
     background-repeat: repeat-y;
     background-size:100vw;
-    height: 172vh;
+    height: 183vh;
 
     color: white;
     padding: 5px;
@@ -34,7 +34,7 @@ header {
 }
 
 header h1 {
-    width: 80vw;
+    width: 60vw;
     word-wrap: break-word;
     font-size: 120px;
     margin-top: 30vh;
@@ -215,7 +215,7 @@ a {
     }
 }
 
-footer {
+/* footer {
     background-color: rgb(2, 4, 38);
     height: 20vh;
     margin-top: 0;
@@ -224,6 +224,6 @@ footer {
 
 footer p {
     margin: 0;
-}
+} */
 
 
