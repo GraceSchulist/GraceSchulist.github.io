@@ -20,7 +20,7 @@ header {
     background-image: url(background3.jpeg);
     background-repeat: repeat-y;
     background-size:100vw;
-    height: 190vh;
+    height: 186vh;
 
     color: white;
     padding: 5px;
@@ -132,7 +132,7 @@ header h1 {
     background-color: rgb(140, 112, 181); */
     background-color: rgb(255, 229, 99);
     border-color: white;
-    font-size: 20px;
+    font-size: 25px;
 
 }
 
@@ -163,7 +163,7 @@ header h1 {
     padding: 10px;
     margin: 20px;
     font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;     
-    line-height: 27px;
+    line-height: 30px;
     font-size: 20px;
     font-weight:500;
 }
@@ -191,13 +191,13 @@ header h1 {
     color: white;
     text-align: center;
     font-size: 30px;
-    width: 20vw;
+    width: 15vw;
     padding: 5px;
     border-radius: 20px;
     border-style: solid;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
     font-weight: 600;
-    margin-left: 75vw;
+    margin-left: 82vw;
     padding-top: 20px;
 }
 
