@@ -20,7 +20,7 @@ header {
     background-image: url(background3.jpeg);
     background-repeat: repeat-y;
     background-size:100vw;
-    height: 181vh;
+    height: 183vh;
 
     color: white;
     padding: 5px;
@@ -191,7 +191,7 @@ header h1 {
     color: white;
     text-align: center;
     font-size: 30px;
-    width: 10vw;
+    width: 12vw;
     padding: 5px;
     border-radius: 20px;
     border-style: solid;
