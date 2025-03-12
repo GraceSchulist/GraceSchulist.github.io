@@ -12,15 +12,16 @@ body {
     flex-direction: column;
     background-color: rgb(59, 65, 99);
     margin: 0px;
+    padding: 0;
 }
 
 /* HEADER + LABEL STYLES*/
 
 header {
     background-image: url(background3.jpeg);
-    background-repeat: repeat-y;
-    background-size:100vw;
-    height: 185.5vh;
+    background-repeat: no-repeat;
+    background-size:100vw 170vh;
+    height: 169vh;
 
     color: white;
     padding: 5px;
@@ -35,7 +36,7 @@ header {
 
 header h1 {
     width: 60vw;
-    word-wrap: break-word;
+    word-wrap:normal;
     font-size: 120px;
     margin-top: 30vh;
     margin-bottom: 5vh;
@@ -50,7 +51,7 @@ header h1 {
     padding: 20px;
     padding-bottom: 10px;
     color: white;
-    margin-top: 40vh;
+    margin-top: 35vh;
     margin-left: 30vw;
     text-align: center;
 	font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
@@ -70,10 +71,11 @@ header h1 {
 }
 
 .description-label {
-    background:linear-gradient(to bottom, rgb(1,3,26,100),rgb(59, 65, 99));
+    /* background:linear-gradient(to bottom, rgb(1,3,26,100),rgb(59, 65, 99)); */
+    position: relative;
     height: 17.5vh;
     margin: 0;
-    text-align: center;
+    margin-top: 50px;
 }
 
 .description-label h2 {
@@ -81,10 +83,8 @@ header h1 {
     background-color: white;
     color: black;
     font-size: 50px;
-    margin-top: 30vh;
     padding: 10px;
     margin: 0 auto;
-    margin-top: 30vh;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
     border-radius: 35px;
     border-style: solid;
@@ -93,7 +93,7 @@ header h1 {
 
 /* IMAGE STYLES */
 
-.image-fade {
+/* .image-fade {
     width: 100%;
     height: auto;
     -webkit-mask-image: linear-gradient(transparent, black 20%, black 70%, transparent),
@@ -103,9 +103,14 @@ header h1 {
     
     -webkit-mask-composite: intersect;
     mask-composite: intersect;
-}
+} */
 
 /* CONCERT CONTAINER STYLES*/
+
+#gradient-spacer {
+    width: 100vw;
+    height: 20vh;
+}
 
 .concert-container {
     display: flex;
@@ -130,7 +135,7 @@ header h1 {
 
     /* background-color: rgb(190, 170, 220);
     background-color: rgb(140, 112, 181); */
-    background-color: rgb(255, 229, 99);
+    background-color: rgb(58, 222, 181);
     border-color: white;
     font-size: 25px;
 
@@ -159,23 +164,37 @@ header h1 {
 } */
 
 .container-copy {
-    width: 40%;
+    width: 70%;
     padding: 10px;
     margin: 20px;
     font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;     
-    line-height: 30px;
-    font-size: 20px;
-    font-weight:500;
+    line-height: 35px;
+    font-size: 22px;
+}
+
+#concert1-copy {
+    background-image: url(background-2.jpeg);
+    box-shadow: 0 0 100px 100px rgb(59, 65, 99) inset;
+    background-size: 100vw;
+    padding: 30px;
+    background-repeat: no-repeat;
+    text-wrap: stable;
+}
+
+#concert1-info {
+    margin-top: 0;
 }
 
 .container-img {
     width: 30%;
     margin: auto;
+    position: relative;
+    top: 0px;
 }
 
 .light-scheme {
-    background-color: rgb(179, 189, 242);
-    color: black;
+    background-color: rgb(23, 28, 51);
+    color: white;
 }
 
 .dark-scheme {
@@ -208,22 +227,28 @@ a {
 }
 
 .bookmark:hover {
-    background-color: rgb(255, 229, 99);
+    background-color: rgb(58, 222, 181);
     border-color: black;
     a {
         color: black;
     }
 }
 
-/* footer {
-    background-color: rgb(2, 4, 38);
-    height: 20vh;
-    margin-top: 0;
-    color: white;
+ footer {
+    background-color: rgb(58, 222, 181);
+    height: 10vh;
+    margin: 0 auto;
+    font-style: bolder;
+    text-align: center;
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-weight: 600;
+    color: black;
 }
 
 footer p {
-    margin: 0;
-} */
+    margin-bottom: 0;
+    padding-top: 4vh;
+    font-size: 20px;
+} 
 
 
