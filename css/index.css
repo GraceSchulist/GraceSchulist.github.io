@@ -177,8 +177,8 @@ header h1 {
 
 #concert1-copy p{
     padding: 30px;
-    background-color: rgba(255,255,255,0.8);
-    box-shadow: 0 0 10px 10px rgb(23, 28, 51) inset;
+    background-color: rgba(255,255,255,0.87);
+    box-shadow: 0 0 7px 7px rgb(23, 28, 51) inset;
     color: rgb(23, 28, 51);
 }
 
@@ -220,6 +220,7 @@ header h1 {
     font-weight: 600;
     margin-left: 85vw;
     padding-top: 1vh;
+    z-index: 999;
 }
 
 
@@ -240,6 +241,8 @@ a {
     background-color: rgb(58, 222, 181);
     height: 10vh;
     margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;
     font-style: bolder;
     text-align: center;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
