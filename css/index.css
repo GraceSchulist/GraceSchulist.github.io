@@ -71,17 +71,16 @@ header h1 {
 }
 
 .description-label {
-    /* background:linear-gradient(to bottom, rgb(1,3,26,100),rgb(59, 65, 99)); */
+    background:linear-gradient(to bottom, rgb(1,3,26,100),rgb(59, 65, 99)); 
     position: relative;
     height: 17.5vh;
     margin: 0;
-    margin-top: 50px;
 }
 
 .description-label h2 {
     width: 60vw;
     background-color: white;
-    color: black;
+    color:rgb(2, 4, 38);
     font-size: 50px;
     padding: 10px;
     margin: 0 auto;
@@ -93,24 +92,16 @@ header h1 {
 
 /* IMAGE STYLES */
 
-/* .image-fade {
-    width: 100%;
-    height: auto;
-    -webkit-mask-image: linear-gradient(transparent, black 20%, black 70%, transparent),
-                         linear-gradient(90deg, transparent, black 20%, black 70%, transparent);
-    mask-image: linear-gradient(transparent, black 20%, black 70%, transparent),
-                linear-gradient(90deg, transparent, black 20%, black 70%, transparent);
-    
-    -webkit-mask-composite: intersect;
-    mask-composite: intersect;
-} */
+ .image-fade {
+    box-shadow: 0 0 100px 100px rgb(59, 65, 99) inset;
+} 
 
 /* CONCERT CONTAINER STYLES*/
 
-#gradient-spacer {
+/* #gradient-spacer {
     width: 100vw;
     height: 20vh;
-}
+} */
 
 .concert-container {
     display: flex;
@@ -126,7 +117,7 @@ header h1 {
 }
 
 .container-information {
-    color: black;
+    color:rgb(2, 4, 38);
     width: 30%;
     border-radius: 35px;
     border-style: solid;
@@ -173,12 +164,21 @@ header h1 {
 }
 
 #concert1-copy {
-    background-image: url(background-2.jpeg);
-    box-shadow: 0 0 100px 100px rgb(59, 65, 99) inset;
-    background-size: 100vw;
-    padding: 30px;
+    background-image: url(background-5.jpg);
+    box-shadow: 0 0 50px 50px rgb(59, 65, 99) inset;
+    background-size: cover;
+    padding: 70px;
+    padding-top: 90px;
+    padding-left: 90px;
     background-repeat: no-repeat;
     text-wrap: stable;
+}
+
+#concert1-copy p{
+    padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+    box-shadow: 0 0 10px 10px rgb(23, 28, 51) inset;
+    color: rgb(23, 28, 51);
 }
 
 #concert1-info {
@@ -227,10 +227,10 @@ a {
 }
 
 .bookmark:hover {
-    background-color: rgb(58, 222, 181);
-    border-color: black;
+    background-color: white;
+    border-color:rgb(2, 4, 38);
     a {
-        color: black;
+        color:rgb(2, 4, 38);
     }
 }
 
@@ -242,7 +242,7 @@ a {
     text-align: center;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
     font-weight: 600;
-    color: black;
+    color:rgb(2, 4, 38);
 }
 
 footer p {
