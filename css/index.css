@@ -119,11 +119,13 @@ header h1 {
 
 .container-information {
     color:rgb(2, 4, 38);
-    width: 30%;
+    width: 35%;
     border-radius: 35px;
     border-style: solid;
     padding: 20px;
     margin: 20px;
+    top: 0;
+    position: sticky;
 
     /* background-color: rgb(190, 170, 220);
     background-color: rgb(140, 112, 181); */
@@ -156,7 +158,7 @@ header h1 {
 } */
 
 .container-copy {
-    width: 70%;
+    width: 65%;
     padding: 10px;
     margin: 20px;
     font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;     
@@ -170,13 +172,13 @@ header h1 {
     background-size: cover;
     padding: 70px;
     padding-top: 90px;
-    padding-left: 90px;
+    padding-left: 80px;
     background-repeat: no-repeat;
     text-wrap: stable;
 }
 
 #concert1-copy p{
-    padding: 30px;
+    padding: 40px;
     background-color: rgba(255,255,255,0.87);
     box-shadow: 0 0 7px 7px rgb(23, 28, 51) inset;
     color: rgb(23, 28, 51);
