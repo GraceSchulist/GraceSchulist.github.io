@@ -20,8 +20,8 @@ body {
 header {
     background-image: url(background3.jpeg);
     background-repeat: no-repeat;
-    background-size:100vw 170vh;
-    height: 169vh;
+    background-size:100vw 186vh;
+    height: 185vh;
 
     color: white;
     padding: 5px;
@@ -42,11 +42,12 @@ header h1 {
     margin-bottom: 5vh;
    margin-left: auto;
    margin-right: auto;
-   font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;     
-
+   font-family: "bd-geminis", sans-serif;
+   font-weight: 400;
+   font-style: normal;
 }
 
-#presents {
+/* #presents {
     width: 40vw;
     padding: 20px;
     padding-bottom: 10px;
@@ -59,16 +60,16 @@ header h1 {
     font-size: 4vw;
     padding-left: 20px;
     font-weight:bolder;
-}
+} */
 
-#introduction {
+/* #introduction {
     width: 100vw;
     color: white;
     font-size: 7vw;
     font-family: Hoefler Text,Baskerville Old Face,Garamond,Times New Roman,serif;     
     font-weight: 600;
     margin: 0 auto;
-}
+} */
 
 .description-label {
     background:linear-gradient(to bottom, rgb(1,3,26,100),rgb(59, 65, 99)); 
@@ -124,8 +125,9 @@ header h1 {
     border-style: solid;
     padding: 20px;
     margin: 20px;
-    top: 0;
+    top: 20px;
     position: sticky;
+    height:fit-content;
 
     /* background-color: rgb(190, 170, 220);
     background-color: rgb(140, 112, 181); */
