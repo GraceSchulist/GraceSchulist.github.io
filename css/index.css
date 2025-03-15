@@ -211,13 +211,14 @@ header h1 {
     text-align: center;
     font-size: 30px;
     width: 12vw;
+    height: 5vh;
     padding: 5px;
     border-radius: 20px;
     border-style: solid;
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
     font-weight: 600;
     margin-left: 85vw;
-    padding-top: 20px;
+    padding-top: 1vh;
 }
 
 
