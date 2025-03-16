@@ -190,9 +190,7 @@ header h1 {
     "wdth" 100;
 }
 
-#concert1-copy {
-    background-image: url(background-2.jpeg);
-    box-shadow: 0 0 50px 50px rgb(59, 65, 99) inset;
+.copy-background {
     background-size: cover;
     padding: 70px;
     padding-top: 90px;
@@ -201,8 +199,23 @@ header h1 {
     text-wrap: stable;
 }
 
-#concert1-copy p{
-    padding: 40px;
+#concert1-copy {
+    background-image: url(background-2.jpeg);
+    box-shadow: 0 0 50px 50px rgb(59, 65, 99) inset;
+}
+
+#concert2-copy {
+    background-image: url(background-5.jpg);
+    box-shadow: 0 0 50px 50px rgb(23, 28, 51) inset;
+}
+
+#concert3-copy {
+    background-image: url(background-5.jpg);
+    box-shadow: 0 0 50px 50px rgb(59,65,99) inset;
+}
+
+.container-copy p{
+    padding: 50px;
     background-color:rgba(208, 255, 243, 0.87);
     box-shadow: 0 0 7px 7px rgb(23, 28, 51) inset;
     color: rgb(23, 28, 51);
