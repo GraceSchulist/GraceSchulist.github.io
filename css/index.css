@@ -1,6 +1,5 @@
 html {
     margin: 0px;
-    width: 100vw;
 }
 
 body {
@@ -34,7 +33,7 @@ header {
 }
 
 header h1 {
-    width: 100vw;
+    width: 99vw;
     word-wrap:normal;
     font-size: 120px;
     margin: 0 auto;
@@ -47,9 +46,11 @@ header h1 {
 
 .banner {
     margin-top: 15vh;
-    width: 100%;
+    margin-left: 0px;
+    width:92%;
     height: auto; 
     box-shadow: 0 0 30px 30px rgb(58, 222, 181);
+    border: solid rgb(19, 76, 61) 7px;
 
 }
 
@@ -130,10 +131,12 @@ header h1 {
     width: 35%;
     border-radius: 35px;
     border-style: solid;
+    border-width: 5px;
     padding: 20px;
     margin: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
     top: 20px;
-    position: sticky;
     height:fit-content;
     font-family: "Play", sans-serif;
     font-weight:600;
@@ -143,7 +146,7 @@ header h1 {
     /* background-color: rgb(190, 170, 220);
     background-color: rgb(140, 112, 181); */
     background-color: rgb(58, 222, 181);
-    border-color: white;
+    border-color:rgb(196, 250, 235);
     font-size: 25px;
 
 }
@@ -245,13 +248,13 @@ header h1 {
 }
 
 #concert10-copy {
-    background-image: url(blue-galaxy.jpg);
+    background-image: url(shiny-blue.jpg);
     box-shadow: 0 0 50px 50px rgb(23,28,51) inset;
 }
 
 .container-copy p{
     padding: 50px;
-    background-color:rgba(208, 255, 243, 0.85);
+    background-color:rgba(208, 255, 243, 0.9);
     box-shadow: 0 0 7px 7px rgb(23, 28, 51) inset;
     color: rgb(23, 28, 51);
 }
@@ -328,4 +331,22 @@ footer p {
     font-size: 20px;
 } 
 
+.spacer {
+    background-color:rgb(58, 222, 181);
+    width: 10vh;
+}
 
+.play-font {
+    font-family: "Play", sans-serif;
+    font-weight:lighter;
+    font-style: normal;  
+}
+
+.turq {
+    color:rgb(19, 76, 61);
+    font-size: 25px;
+}
+
+.added-info {
+    font-weight: 600;
+}
