@@ -364,12 +364,12 @@ footer p {
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 
     header {
         background-image: url(background3.jpeg);
         background-size:100vw 186vh;
-        height: 80vh;
+        height: 85vh;
         margin: 0px;
         color: white;
         padding: 5px;
@@ -462,7 +462,7 @@ footer p {
         border-style: solid;
         border-width: 5px;
         padding: 20px;
-        margin: 5px;
+        margin: 0 auto;
         margin-top: 5vh;
         top: 20px;
         height:fit-content;
@@ -518,8 +518,6 @@ footer p {
         border-width: 4px;
         width: 98%;
     }
-
-
 
 
 
