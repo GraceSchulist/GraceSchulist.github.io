@@ -20,7 +20,7 @@ header {
     background-image: url(background3.jpeg);
     background-repeat: no-repeat;
     background-size:100vw 186vh;
-    height: 160vh;
+    height: 175vh;
     margin: 0px;
     color: white;
     padding: 5px;
@@ -368,7 +368,6 @@ footer p {
 
     header {
         background-image: url(background3.jpeg);
-        background-repeat: no-repeat;
         background-size:100vw 186vh;
         height: 80vh;
         margin: 0px;
@@ -445,6 +444,7 @@ footer p {
         font-style: normal;   
         line-height: 20px;
         font-size: 12px;
+        margin-top: 3vh;
     }
 
     .container-copy p {
@@ -517,6 +517,68 @@ footer p {
     .banner {
         border-width: 4px;
         width: 98%;
+    }
+
+
+
+
+
+
+
+
+    #concert1-copy {
+        background-image: url(background-2.jpeg);
+        box-shadow: 0 0 20px 10px rgb(59, 65, 99) inset;
+    }
+    
+    #concert2-copy {
+        background-image: url(galaxy-background.jpg);
+        box-shadow: 0 0 20px 10px rgb(23, 28, 51) inset;
+    }
+    
+    #concert3-copy {
+        background-image: url(swirly.jpg);
+        box-shadow: 0 0 20px 10px rgb(59,65,99) inset;
+    }
+    
+    #concert4-copy {
+        background-image: url(vortex.jpg);
+        box-shadow: 0 0 20px 10px rgb(23, 28, 51) inset;
+    }
+    
+    #concert5-copy {
+        background-image: url(turq-galaxy.jpg);
+        box-shadow: 0 0 20px 10px rgb(59,65,99) inset;
+    }
+    
+    #concert6-copy {
+        background-image: url(colorful.jpg);
+        box-shadow: 0 0 20px 10px rgb(23,28,51) inset;
+    }
+    
+    #concert7-copy {
+        background-image: url(purple-starry.jpg);
+        box-shadow: 0 0 20px 10px rgb(59,65,99) inset;
+    }
+    
+    #concert8-copy {
+        background-image: url(multi-color.jpg);
+        box-shadow: 0 0 20px 10px rgb(23,28,51) inset;
+    }
+    
+    #concert9-copy {
+        width: 100%;
+        background-image: url(light-purp.jpg);
+        box-shadow: 0 0 20px 10px rgb(59,65,99) inset;
+    }
+    
+    #concert10-copy {
+        background-image: url(shiny-blue.jpg);
+        box-shadow: 0 0 20px 10px rgb(23,28,51) inset;
+    }
+
+    .image-fade {
+        box-shadow: 0 0 white;
     }
 
 }
