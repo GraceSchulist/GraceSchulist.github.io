@@ -427,12 +427,14 @@ footer p {
         flex-direction: column;
         padding: 20px;
         margin: 0;
+        padding-bottom: 40px;
     }
     
     .reverse-concert-container {
         display: flex;
         flex-direction:column;
         padding: 20px;
+        padding-bottom: 40px;
     }
 
     .container-copy {
