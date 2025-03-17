@@ -185,7 +185,7 @@ header h1 {
 
 .tektur-font {
   font-family: "Tektur", sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-weight:700;
   font-style: normal;
   color:rgb(2, 4, 38);
@@ -316,7 +316,7 @@ a {
     height: 10vh;
     margin-top: -1px;
     position: relative;
-    font-style: bolder;
+    font-weight: bolder;
     text-align: center;
     font-weight: 600;
     color:rgb(2, 4, 38);
