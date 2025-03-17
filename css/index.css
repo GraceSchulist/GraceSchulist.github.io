@@ -20,7 +20,7 @@ header {
     background-image: url(background3.jpeg);
     background-repeat: no-repeat;
     background-size:100vw 186vh;
-    height: 175vh;
+    height: 150vh;
     margin: 0px;
     color: white;
     padding: 5px;
@@ -369,7 +369,7 @@ footer p {
     header {
         background-image: url(background3.jpeg);
         background-size:100vw 186vh;
-        height: 85vh;
+        height: 80vh;
         margin: 0px;
         color: white;
         padding: 5px;
