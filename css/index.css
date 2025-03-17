@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(59, 65, 99);
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 
@@ -151,7 +151,7 @@ header h1 {
 
 }
 
-.bd-font {
+.bd-font-extra {
     font-family: "bd-geminis", sans-serif;
     font-size: 25px;
 }
@@ -281,7 +281,7 @@ header h1 {
 }
 
 .bookmark {
-    position: sticky;
+    position: fixed;
     bottom:20px;
     background-color: rgb(2, 4, 38);
     height: 5vh;
@@ -295,7 +295,7 @@ header h1 {
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
-    margin-left: 85vw;
+    right: 20px;
     z-index: 999;
 }
 
@@ -314,9 +314,8 @@ a {
  footer {
     background-color: rgb(58, 222, 181);
     height: 10vh;
-    margin: 0 auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: -1px;
+    position: relative;
     font-style: bolder;
     text-align: center;
     font-weight: 600;
@@ -347,4 +346,177 @@ footer p {
 
 .added-info {
     font-weight: 600;
+}
+
+.concert-container, .reverse-concert-container {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.reverse-concert-container:last-of-type, .concert-container:last-of-type {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+
+    header {
+        background-image: url(background3.jpeg);
+        background-repeat: no-repeat;
+        background-size:100vw 186vh;
+        height: 80vh;
+        margin: 0px;
+        color: white;
+        padding: 5px;
+        /* border-bottom-style: solid;
+        border-bottom-color: white;
+        border-bottom-width: 4px;*/
+        text-align: center;
+        padding-bottom: 0px;
+        
+    }
+    
+    header h1 {
+        width: 99vw;
+        word-wrap:normal;
+        font-size: 60px;
+        margin: 0 auto;
+        margin-top: 5vh;
+       font-family: "bd-geminis", sans-serif;
+       font-weight: 400;
+       text-align: center;
+       font-style: normal;
+       margin-bottom: 10vh;
+    }
+
+    .banner {
+        margin-top: 2vh;
+    }
+
+    .description-label h2 {
+        width: 75vw;
+        background-color: white;
+        color:rgb(2, 4, 38);
+        font-size: 40px;
+        padding: 10px;
+        padding-top: 17px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        font-family: "bd-geminis", sans-serif;
+        border-radius: 35px;
+        border-style: solid;
+        border-color: white;
+        text-align: center;
+    } 
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(59, 65, 99);
+        margin: 0;
+        padding: 0;
+    }
+
+    .concert-container {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .reverse-concert-container {
+        display: flex;
+        flex-direction:column;
+        padding: 20px;
+    }
+
+    .container-copy {
+        width: 97%;
+        padding: 5px;
+        margin: 2px;
+        font-family: "Play", sans-serif;
+        font-weight:lighter;
+        font-style: normal;   
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .container-copy p {
+        padding: 30px;
+    }
+
+    .concert-title {
+        font-size: 22px;
+    }
+
+    .container-information {
+        color:rgb(19, 76, 61);
+        width: 83%;
+        border-radius: 35px;
+        border-style: solid;
+        border-width: 5px;
+        padding: 20px;
+        margin: 5px;
+        margin-top: 5vh;
+        top: 20px;
+        height:fit-content;
+        font-family: "Play", sans-serif;
+        font-weight:600;
+        font-style: normal; 
+    
+    
+        /* background-color: rgb(190, 170, 220);
+        background-color: rgb(140, 112, 181); */
+        background-color: rgb(58, 222, 181);
+        border-color:rgb(196, 250, 235);
+        font-size: 17px;
+    
+    }
+
+    .turq {
+        font-size: 20px;
+    }
+
+    .bd-font-extra {
+        font-size: 15px;
+    }
+
+    footer {
+        height: 14vh;
+    }
+    
+    footer p {
+        font-size: 15px;
+    }
+
+    .bookmark {
+        position: fixed;
+        bottom:10px;
+        background-color: rgb(2, 4, 38);
+        height: 5vh;
+        color: white;
+        text-align: center;
+        font-size: 15px;
+        width: 22vw;
+        padding: 10px;
+        height: fit-content;
+        font-weight: 500;
+        border-radius: 20px;
+        border-style: solid;
+        border-width: 2px;
+        right: 10px;
+        z-index: 999;
+    }
+
+    .banner {
+        border-width: 4px;
+        width: 98%;
+    }
+
 }
