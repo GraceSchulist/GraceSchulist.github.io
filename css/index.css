@@ -205,18 +205,53 @@ header h1 {
 }
 
 #concert2-copy {
-    background-image: url(background-5.jpg);
+    background-image: url(galaxy-background.jpg);
     box-shadow: 0 0 50px 50px rgb(23, 28, 51) inset;
 }
 
 #concert3-copy {
-    background-image: url(background-5.jpg);
+    background-image: url(swirly.jpg);
     box-shadow: 0 0 50px 50px rgb(59,65,99) inset;
+}
+
+#concert4-copy {
+    background-image: url(vortex.jpg);
+    box-shadow: 0 0 50px 50px rgb(23, 28, 51) inset;
+}
+
+#concert5-copy {
+    background-image: url(turq-galaxy.jpg);
+    box-shadow: 0 0 50px 50px rgb(59,65,99) inset;
+}
+
+#concert6-copy {
+    background-image: url(colorful.jpg);
+    box-shadow: 0 0 50px 50px rgb(23,28,51) inset;
+}
+
+#concert7-copy {
+    background-image: url(purple-starry.jpg);
+    box-shadow: 0 0 50px 50px rgb(59,65,99) inset;
+}
+
+#concert8-copy {
+    background-image: url(multi-color.jpg);
+    box-shadow: 0 0 50px 50px rgb(23,28,51) inset;
+}
+
+#concert9-copy {
+    background-image: url(light-purp.jpg);
+    box-shadow: 0 0 50px 50px rgb(59,65,99) inset;
+}
+
+#concert10-copy {
+    background-image: url(blue-galaxy.jpg);
+    box-shadow: 0 0 50px 50px rgb(23,28,51) inset;
 }
 
 .container-copy p{
     padding: 50px;
-    background-color:rgba(208, 255, 243, 0.87);
+    background-color:rgba(208, 255, 243, 0.85);
     box-shadow: 0 0 7px 7px rgb(23, 28, 51) inset;
     color: rgb(23, 28, 51);
 }
@@ -257,6 +292,7 @@ header h1 {
     border-radius: 20px;
     border-style: solid;
     border-width: 2px;
+    margin: 0;
     margin-left: 85vw;
     padding-top: 1vh;
     z-index: 999;
