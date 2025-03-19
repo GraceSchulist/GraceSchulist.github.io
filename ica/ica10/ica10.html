@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="ica10.css" rel="stylesheet">
+    <title>In-Class Assignment 10</title>
+</head>
+<body>
+    <div class="container">
+        <p>Click the button to change the button's color</p>
+        <button id="button">Click Me</button>
+        <p>Hover over the image to add a drop shadow</p>
+        <img id="img" src="https://i.redd.it/i-got-bored-so-i-decided-to-draw-a-random-image-on-the-v0-4ig97vv85vjb1.png?width=1280&format=png&auto=webp&s=7177756d1f393b6e093596d06e1ba539f723264b" alt="cat in a pumpkin">
+    </div>
+
+<script>
+    function updateButtonBkg() {
+        const userColor = prompt("Enter your desired color's HEX code in the correct format:");
+        button.style.backgroundColor = userColor;
+    }
+
+
+    const button = document.getElementById("button");
+
+    button.addEventListener("click",updateButtonBkg);
+
+    function addImgShadow() {
+        img.style.boxShadow = '10px 10px 50px 20px black';
+    }
+
+    function removeImgShadow() {
+        img.style.boxShadow = '';
+    }
+
+    const img = document.getElementById("img");
+
+    img.addEventListener("mouseover", addImgShadow);
+    img.addEventListener("mouseout", removeImgShadow);
+</script>
+
+</body>
+</html>
