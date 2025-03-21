@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Silly story generator</title>
+
+    <style>
+      body {
+        font-family:'Courier New', Courier, monospace;
+        width: 350px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+    
+
+      div {
+        padding-bottom: 30px;
+      }
+
+      input[type="text"] {
+        padding: 5px;
+        width: 200px;
+        background-color: darkgoldenrod;
+        border-width: 0px;
+        border-radius: 7px;
+      }
+
+      p {
+        background: paleturquoise;
+        color: darkcyan;
+        padding: 10px;
+        visibility: hidden;
+        font-weight: 600;
+        border: 3px solid darkcyan;
+      }
+
+      .name {
+        background-color: lightgoldenrodyellow;
+        border: 2px solid darkgoldenrod;
+        padding: 10px;
+        color: darkgoldenrod;
+      }
+
+      .buttons {
+        margin-top: 10px;
+        background-color: lightgreen;
+        border: 2px solid darkgreen;
+        color: darkgreen;
+        padding: 10px;
+      }
+
+      .randomize {
+        background-color: lightgoldenrodyellow;
+        border: 3px solid darkgoldenrod;
+        color: darkgoldenrod;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+
+      .randomize:hover {
+        background-color: paleturquoise;
+        border: 3px solid darkcyan;
+        color:darkcyan;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="name">
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="" />
+    </div>
+    <div class="buttons">
+      <label for="us">US</label
+      ><input id="us" type="radio" name="ukus" value="us" checked />
+      <label for="uk">UK</label
+      ><input id="uk" type="radio" name="ukus" value="uk" />
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+
+    <script src="main.js"></script>
+  </body>
+</html>
