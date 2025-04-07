@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700");
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Lora, sans-serif;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.settings {
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-image: linear-gradient(45deg, rgb(255, 149, 149), rgb(255, 216, 143), rgb(255, 255, 144), rgb(128, 255, 128), rgb(146, 146, 255), rgb(205, 136, 255), rgb(255, 130, 255));
+  -webkit-background-clip: text;
+  color: transparent; 
+  position: fixed;
+  left: 1em; top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  
+  input {
+    padding: 0.5em;
+    background: #333;
+    font: inhrit;
+    color: #fff;
+  }
+}
+
+.settings .info-box {
+  background-color: rgb(42, 42, 42);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  border-image: linear-gradient(45deg, rgb(255, 149, 149), rgb(255, 216, 143), rgb(255, 255, 144), rgb(128, 255, 128), rgb(146, 146, 255), rgb(205, 136, 255), rgb(255, 130, 255)) 1;
+  width: 300px;
+  line-height: 20px;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+}
+
+.settings .info-box h5 {
+  font-family: "montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+canvas {
+  width: 520px;
+  height: 520px;
+}
