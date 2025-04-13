@@ -1,0 +1,180 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    background-color: #c9bd95;
+    background-image: url(4.webp);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+  
+  .app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    background-color: rgb(132, 246, 86);
+    border-radius: 5px;
+    border: 3px dashed rgb(35, 152, 181);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  }
+  
+  header {
+    width: 100%;
+    font-size: 55px;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+    font-family: "schoolbell-pro", sans-serif;
+    color: rgb(18, 132, 161);;
+    font-weight: bolder;
+    font-style: normal;
+    background-color: rgb(163, 255, 127);
+  }
+  
+  .quotes {
+    padding: 20px 50px;
+    min-height: 200px;
+  }
+  
+  .quote-text {
+    padding-bottom: 20px;
+    font-size: 27px;
+    line-height: 45px;
+    color: rgb(182, 14, 148);
+    font-family: "quicksand", sans-serif;
+font-weight: bold;
+font-style: normal;
+  }
+  
+  .controls {
+    width: 100%;
+    padding: 20px 50px;
+  }
+  
+  .button {
+    display: block;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 28px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    font-family: "schoolbell-pro", sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-style: normal;
+  }
+  
+  .twitter {
+    background-color: #5218b7;
+    text-decoration: none;
+  }
+  
+  .twitter:hover {
+    background-color: #8046e4;
+  }
+  
+  .new-quote {
+    background-color: #007ad6;
+    margin-bottom: 15px;
+  }
+  
+  .new-quote:hover {
+    background-color: #3e96d9;
+  }
+  
+  .new-quote:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+  }
+
+  .reaction {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    width: 65vw;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .reaction .react-text{
+    margin-left: 210px;
+    background-color: #007ad6;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    flex-grow: 1;
+    padding-left: 35px;
+    font-family: "quicksand", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 22px;
+    border: 3px solid #aadaff;
+    padding-top: 0px;
+
+  }
+
+  .reaction #js-right-button {
+    background-color: #5218b7;
+    color: white;
+    width: 8vw;
+    height: 50px;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  #js-right-button:hover {
+    background-color: #8046e4;
+  }
+
+  .reaction #js-wrong-button {
+    background-color: rgb(182, 14, 148);
+    color: white;
+    width: 8vw;
+    height: 50px;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  #js-wrong-button:hover {
+    background-color: rgb(226, 39, 189);
+  }
+
+  #score-container {
+    width: 20px;
+    height: 50px;
+    background-color: #007ad6;
+    padding: 20px;
+    margin-left: 80px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .app {
+      width: 100%;
+    }
+    .quote-text {
+      font-size: 18px;
+    }
+  }

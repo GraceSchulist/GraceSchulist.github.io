@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa12.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gmf4lmy.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <header>Nerdy Number Trivia</header>
+        <section class="quotes">
+          <div class="quote-text" id="js-quote-text"></div>
+          <div class="quote-text" id="js-answer-text"></div>
+        </section>
+        <section class="controls" >
+          <button type="button" id="js-new-quote" class="new-quote button">
+            Generate a new bit of trivia!
+          </button>
+          <button type="button" id="js-tweet" class="twitter button">
+            Show me the answer!
+          </button>
+          <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
+        </section>
+      </div>
+      <div class="reaction">
+        <div class="react-text" id="js-react-text">Did you get it right?</div>
+        <button type="button" id="js-right-button" class="right button">Yes! :D</button>
+        <button type="button" id="js-wrong-button" class="wrong button">No. :(</button>
+        <div class="react-text" id="score-container">Score: <span id="score-value">0</span></div>
+      </div>
+      <script src="wa12.js"></script>
+</body>
+</html>
