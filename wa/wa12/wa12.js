@@ -21,7 +21,7 @@ incorrectBtn.addEventListener('click', () => {
     hideReactionButtons();
 });
 
-var apiEndpoint = "https://opentdb.com/api.php?amount=1";
+var apiEndpoint = "http://opentdb.com/api.php?amount=1";
 
 let current = {
     question: "",
