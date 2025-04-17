@@ -21,7 +21,7 @@ incorrectBtn.addEventListener('click', () => {
     hideReactionButtons();
 });
 
-var apiEndpoint = "http://opentdb.com/api.php?amount=1";
+var apiEndpoint = "https://opentdb.com/api.php?amount=1";
 
 let current = {
     question: "",
@@ -30,7 +30,7 @@ let current = {
 
 async function getNumberTrivia() {
     try {
-      const response = await fetch('http://numbersapi.com/random/trivia?json');
+      const response = await fetch('https://numbersapi.com/random/trivia?json');
       if (!response.ok) {
         throw Error(response.statusText);
       }
