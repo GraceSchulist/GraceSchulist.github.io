@@ -1,0 +1,104 @@
+  #key-container {
+    background-color: lightblue;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: lightgray;
+  }
+  .key-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .color-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: grab;
+  }
+  #color-palette {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: palegoldenrod;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #sequence-container {
+    background-color: lightpink;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px dashed gray;
+    min-height: 50px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: fit-content;
+    flex-wrap: wrap;
+  }
+  .sequence-slot {
+    width: 40px;
+    height: 40px;
+    border: 1px solid lightgray;
+    background-color: #f0f0f0;
+  }
+  #phone-number {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  #submit-button, #reset-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+
+  #easy-button, #medium-button, #hard-button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+
+  #difficulty-button-container {
+    width: fit-content;
+    background-color: palegreen;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  
+  #instruction {
+    color: black;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .instruction-static {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  #number-input-container {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #alert {
+    background-color: black;
+    color: white;
+  }
+
+  
+
