@@ -158,7 +158,7 @@
     const phoneInput = document.getElementById('number-input').value.trim();
   
     if (!/^\d{10}$/.test(phoneInput)) {
-      alertBox.textContent = 'Please enter a valid 10-digit phone number (digits only).';
+      showAlert('Please enter a valid 10-digit phone number (digits only).');
       return;
     }
   
@@ -176,20 +176,20 @@
     phoneNumberDisplay.style.display = 'block';
   
     if (enteredDigits.includes('?') || enteredDigits.length !== 10) {
-      alertBox.textContent = 'All slots must be filled. Press reset and try again.';
+      showAlert('All slots must be filled. Press reset and try again.');
     } else if (enteredDigits === submittedNumber) {
-      alertBox.textContent = '✅ Success! Your phone number matches the color sequence!';
+      showAlert('✅ Success! Your phone number matches the color sequence!');
     } else {
-      alertBox.textContent = '❌ Incorrect color sequence for the entered phone number. Press reset and try again.';
+      showAlert('❌ Incorrect color sequence for the entered phone number. Press reset and try again.');
       sequenceSlots.forEach(slot => {
         slot.style.backgroundColor = '';
       });
+
     }
   
     // //Show these elements
     // difficultyContainer.style.display = 'block';
     // instructionDiv.style.display = "block";
-     alertBox.style.display = "block";
     // easyButton.style.display = 'inline';
     // mediumButton.style.display = 'inline';
     // hardButton.style.display = 'inline';
@@ -217,7 +217,6 @@
     //Show these elements
     difficultyContainer.style.display = 'block';
     instructionDiv.style.display = "block";
-    alertBox.style.display = "block";
     easyButton.style.display = 'inline';
     mediumButton.style.display = 'inline';
     hardButton.style.display = 'inline';
@@ -236,11 +235,11 @@
     const phoneNumber = numberInput.value.trim();
 
     if (!/^\d{10}$/.test(phoneNumber)) {
-      alertBox.textContent = "Please enter a valid 10-digit phone number using only digits.";
+      showAlert('Please enter a valid 10-digit phone number using only digits.');
       return;
     }
 
-    alertBox.textContent = 'Phone number accepted.';
+    showAlert('Phone number accepted.');
     phoneNumberDisplay.textContent = `Target Number: ${formatPhoneNumber(phoneNumber)}`;
     submittedNumber = phoneNumber;
 
@@ -267,6 +266,17 @@
     }
     return parts.join('');
   }
+  
+
+  function showAlert(message) {
+  alertBox.textContent = message;
+  alertBox.style.display = "block";
+  
+  // Hide after 5 seconds
+  setTimeout(() => {
+    alertBox.style.display = "none";
+  }, 5000);
+}
 
   //Initial setup
   document.addEventListener('DOMContentLoaded', () => {
