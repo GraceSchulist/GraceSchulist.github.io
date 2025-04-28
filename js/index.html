@@ -3,28 +3,34 @@
 <head>
 <title>Drag-and-Drop Color Code Input</title>
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://use.typekit.net/gmf4lmy.css">
 </head>
 <body>
   <div id="alert"></div>
-  <label for="number-input" id="input-label">Please enter your phone number (no dashes, just digits).</label>
-  <div id="number-input-container">
+  <label for="number-input" id="input-label" class="oso-serif">Please enter your phone number (no dashes, just digits).</label>
+  <div id="number-input-container" class="oso-serif">
   <input type="text" id="number-input" name="number-input">
-  <button id="input-submit-btn">Submit</button>
+  <button id="input-submit-btn" class="consolas">Submit</button>
 </div>
-<div id="key-container"></div>
-<p id="error-message">Error. Must complete phone number authentication to proceed.</p>
-<div id="instruction">Memorize the color-digit key.</div>
+<div id="instruction" class="oso-serif">Memorize the color-digit key.</div>
 <div id="difficulty-button-container">
 <br>
-<p id="instruction-second">Select difficulty to view the key:</p>
-<button id="easy-button">Easy</button>
-<button id="medium-button">Medium</button>
-<button id="hard-button">Hard</button>
+<p id="instruction-second" class="oso-serif">Select difficulty to view the key:</p>
+<button id="easy-button" class="consolas">Easy</button>
+<button id="medium-button" class="consolas">Medium</button>
+<button id="hard-button" class="consolas">Hard</button>
+</div>
+<div id="key-container">
+  <div id="key-label">Key</div>
+  <div id="key-countdown"></div>
 </div>
 <br>
-<div id="instruction-static">Drag the correct colors into the sequence below to authenticate your phone number.</div>
-<div id="color-palette"></div>
+<div id="instruction-static" class="oso-serif">Drag the correct colors into the sequence below to authenticate your phone number.</div>
+<div id="color-palette">
+  <div class="color-label">Select a color here.</div>
+</div>
 <div id="sequence-container">
+  <div class="sequence-label">Insert color boxes here.</div>
   <div class="sequence-slot" data-index="0"></div>
   <div class="sequence-slot" data-index="1"></div>
   <div class="sequence-slot" data-index="2"></div>
@@ -36,10 +42,11 @@
   <div class="sequence-slot" data-index="8"></div>
   <div class="sequence-slot" data-index="9"></div>
 </div>
-
 <div id="phone-number"></div>
-<button id="submit-button">Submit</button>
-<button id="reset-button">Reset</button>
+<div class="button-container">
+<button id="submit-button" class="consolas">Submit</button>
+<button id="reset-button" class="consolas">Reset</button>
+</div>
 
 <script src="script.js"></script>
 

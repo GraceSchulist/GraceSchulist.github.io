@@ -16,7 +16,7 @@
   const inputSubmitBtn = document.getElementById('input-submit-btn');
   const numberInput = document.getElementById('number-input');
   const alertBox = document.getElementById('alert');
-  const errorMessage = document.getElementById('error-message');
+  
   const secondInstructions = document.getElementById('instruction-second');
   const instructionStatic = document.getElementById('instruction-static');
 
@@ -93,7 +93,7 @@
       resetButton.style.display = 'block';
       difficultyContainer.style.display = 'none';
       setTimeout(() => { 
-        keyContainer.style.display = 'none';
+        keyContainer.classList.add('fade-out');
       }, 3000);
     })
 
@@ -111,7 +111,7 @@
       resetButton.style.display = 'block';
       difficultyContainer.style.display = 'none';
       setTimeout (() => {
-        keyContainer.style.display = 'none';
+        keyContainer.classList.add('fade-out');
       },2250);
     })
 
@@ -129,7 +129,7 @@
       instructionStatic.style.display = 'block';
       difficultyContainer.style.display = 'none';
       setTimeout(() => {
-        keyContainer.style.display = 'none';
+        keyContainer.classList.add('fade-out');
       }, 1500);
     })
 
@@ -158,6 +158,7 @@
     const phoneInput = document.getElementById('number-input').value.trim();
   
     if (!/^\d{10}$/.test(phoneInput)) {
+      alertBox.style.backgroundColor = 'grey';
       showAlert('Please enter a valid 10-digit phone number (digits only).');
       return;
     }
@@ -173,14 +174,22 @@
     });
   
     phoneNumberDisplay.textContent = `You entered: ${formatPhoneNumber(enteredDigits)}`;
+    phoneNumberDisplay.style.fontFamily = 'oso-serif';
     phoneNumberDisplay.style.display = 'block';
   
     if (enteredDigits.includes('?') || enteredDigits.length !== 10) {
+      alertBox.style.backgroundColor = 'grey';
       showAlert('All slots must be filled. Press reset and try again.');
+      submitButton.style.display = 'none';
     } else if (enteredDigits === submittedNumber) {
-      showAlert('✅ Success! Your phone number matches the color sequence!');
+      alertBox.style.backgroundColor = 'green';
+      showAlert('Success! Your phone number matches the color sequence!');
+      numberInput.textContent = '';
+      inputSubmitBtn.style.display = 'inline';
     } else {
-      showAlert('❌ Incorrect color sequence for the entered phone number. Press reset and try again.');
+      alertBox.style.backgroundColor = '';
+      showAlert('Incorrect color sequence for the entered phone number. Press reset and try again.');
+      submitButton.style.display = 'none';
       sequenceSlots.forEach(slot => {
         slot.style.backgroundColor = '';
       });
@@ -228,26 +237,32 @@
     sequenceSlots.forEach(slot => {
       slot.style.display = 'none';
     })
+    resetButton.style.display = 'none';
+    submitButton.style.display = 'none';
     instructionStatic.style.display = 'none';
   });
 
   inputSubmitBtn.addEventListener('click', () => {
+    generateColorKey();
     const phoneNumber = numberInput.value.trim();
 
     if (!/^\d{10}$/.test(phoneNumber)) {
+      alertBox.style.backgroundColor = 'grey';
       showAlert('Please enter a valid 10-digit phone number using only digits.');
       return;
     }
 
-    showAlert('Phone number accepted.');
+    alertBox.style.backgroundColor = 'grey';
+    showAlert('Error. Must complete phone number authentication to proceed.');
     phoneNumberDisplay.textContent = `Target Number: ${formatPhoneNumber(phoneNumber)}`;
     submittedNumber = phoneNumber;
 
     //Trigger new elements to appear on screen when submitb button is pushed
-  generateColorKey();
+  
   phoneNumberDisplay.textContent = '';
 
-  errorMessage.style.display = 'block';
+  inputSubmitBtn.style.display = 'none';
+
   instructionDiv.style.display = 'block';
   difficultyContainer.style.display = 'block';
   easyButton.style.display = 'inline';
@@ -269,14 +284,19 @@
   
 
   function showAlert(message) {
-  alertBox.textContent = message;
-  alertBox.style.display = "block";
+    alertBox.textContent = message;
+    alertBox.style.display = 'block'; 
+    alertBox.classList.add('show');
   
-  // Hide after 5 seconds
-  setTimeout(() => {
-    alertBox.style.display = "none";
-  }, 5000);
-}
+    setTimeout(() => {
+      alertBox.classList.remove('show');
+  
+     
+      setTimeout(() => {
+        alertBox.style.display = 'none';
+      }, 400); 
+    }, 4000);
+  }
 
   //Initial setup
   document.addEventListener('DOMContentLoaded', () => {
@@ -295,7 +315,7 @@
     hardButton.style.display = 'none';
     difficultyContainer.style.display = 'none';
     alertBox.style.display = 'none';
-    errorMessage.style.display = 'none';
+    
     secondInstructions.style.display = 'none';
     instructionStatic.style.display = 'none';
   })

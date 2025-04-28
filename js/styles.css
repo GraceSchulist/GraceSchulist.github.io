@@ -1,12 +1,19 @@
   #key-container {
-    background-color: lightblue;
+    background-color: lightgrey;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    left: 70vw;
+    top: 20vh;
     border: 1px solid black;
     padding: 10px;
-    background-color: lightgray;
+    opacity: 1;
+    transition: opacity 3s ease-in-out;
+    display: block;
   }
+
+  #key-container.fade-out {
+    opacity: 0;
+  }
+
   .key-item {
     display: flex;
     align-items: center;
@@ -15,22 +22,25 @@
   .color-box {
     width: 40px;
     height: 40px;
-    border: 1px solid black;
+    border: 2px solid black;
     margin-right: 10px;
     cursor: grab;
   }
   #color-palette {
     width: fit-content;
+    height: fit-content;
+    padding: 20px;
     margin: 0 auto;
-    background-color: palegoldenrod;
+    background-color: lightgrey;
     margin-top: 20px;
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     flex-direction: row;
+    border: 5px solid black;
   }
   #sequence-container {
-    background-color: lightpink;
+    background-color: rgb(60, 60, 60);
     margin: 0 auto;
     margin-top: 20px;
     border: 1px dashed gray;
@@ -40,12 +50,14 @@
     padding: 10px;
     width: fit-content;
     flex-wrap: wrap;
+    border-radius: 10px;
   }
   .sequence-slot {
     width: 40px;
     height: 40px;
     border: 1px solid lightgray;
     background-color: #f0f0f0;
+    margin: 4px;
   }
   #phone-number {
     width: fit-content;
@@ -57,20 +69,48 @@
     margin-top: 10px;
     padding: 8px 15px;
     cursor: pointer;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+  }
+
+  #submit-button {
+    background-color: rgb(119, 242, 119);
+    border: 2px solid rgb(59, 120, 59);
+  }
+
+  #reset-button {
+    background-color: rgb(242, 119, 119);
+    border: 2px solid rgb(120, 59, 59);
+  }
+
+  #reset-button:hover {
+    background-color: rgb(185, 0, 0);
+    color: white;
+  }
+
+  #submit-button:hover {
+    background-color: rgb(0, 169, 0);
+    color: white;
   }
 
   #easy-button, #medium-button, #hard-button {
-    margin-top: 10px;
     padding: 8px 15px;
     cursor: pointer;
+    border-radius: 7px;
+    margin: 5px;
   }
 
   #difficulty-button-container {
     width: fit-content;
-    background-color: palegreen;
+    background-color: rgb(60, 60, 60);
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    color: white;
+    height: fit-content;
+    padding: 20px;
+
   }
 
   p {
@@ -79,26 +119,189 @@
     margin-top: 10px;
   }
   
-  #instruction {
+  #instruction { 
     color: black;
     width: fit-content;
     margin: 0 auto;
   }
 
-  .instruction-static {
+  #instruction-static {
     width: fit-content;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   #number-input-container {
     display: block;
+    width: fit-content;
     margin: 0 auto;
+    margin-bottom: 70px;
+  }
+  
+  #number-input {
+    background-color: lightgrey;
+  }
+
+  #input-label {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
   }
 
   #alert {
-    background-color: black;
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: grey; 
     color: white;
+    padding: 16px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    opacity: 0;
+    transition: top 0.4s ease, opacity 0.4s ease;
+  }
+  
+  #alert.show {
+    top: 20px; 
+    opacity: 1;
   }
 
-  
 
+  #error-message {
+    background-color: rgb(160, 0, 0);
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+  html {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  body { 
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  #input-label {
+    margin-top: 100px;
+  }
+
+  .oso-serif {
+    font-family: "oso-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* .oso-sans {
+    font-family: "oso-sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  } */
+
+  .consolas {
+    font-family: "consolas", sans-serif;
+font-weight: 400;
+font-style: normal;
+  }
+
+  .sequence-label {
+    color: white;
+    font-family: "oso-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .color-label {
+    color: black;
+    font-family: "oso-serif", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  #easy-button {
+    background-color: rgb(119, 242, 119);
+    border: 2px solid rgb(59, 120, 59);
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  #medium-button {
+    background-color: rgb(242, 242, 119);
+    border: 2px solid rgb(116, 120, 59);
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  #hard-button {
+    background-color: rgb(242, 119, 119);
+    border: 2px solid rgb(120, 59, 59);
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  #easy-button:hover {
+    border-color: rgb(194, 255, 194);
+    background-color: rgb(0, 169, 0);
+    color: white;
+    
+  }
+
+  #medium-button:hover {
+    border-color: rgb(248, 255, 194);
+    background-color: rgb(156, 156, 0);
+    color: white
+    
+  }
+
+  #hard-button:hover {
+    border-color: rgb(255, 194, 194);
+    background-color: rgb(185, 0, 0);
+    color: white;
+  }
+  
+  #key-label {
+    color: black;
+    font-weight: 800;
+    display: block;
+    background-color: red;
+  }
+
+  .button-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  #number-input:focus {
+    background-color: lightgrey;
+  }
+
+  #number-input:active {
+    background-color: lightgrey;
+  } 
+
+  #input-submit-btn {
+    background-color: rgb(60, 60, 60);
+    color: white;
+    border-radius: 5px;
+  }
+
+  #input-submit-btn:hover {
+    background-color: rgb(109, 109, 109)
+  }
