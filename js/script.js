@@ -80,7 +80,11 @@
     //EASY, MEDIUM, AND HARD MODE BUTTON SCREEN
 
     easyButton.addEventListener('click', () => {
+      generateColorKey();
+      keyContainer.classList.remove('fade-out');
       keyContainer.style.display = 'block';
+
+     
       paletteDiv.style.display = 'block';
       sequenceContainer.style.display = 'block';
       instructionStatic.style.display = 'block';
@@ -98,7 +102,11 @@
     })
 
     mediumButton.addEventListener('click',() => {
+      generateColorKey();
+      keyContainer.classList.remove('fade-out');
       keyContainer.style.display = 'block';
+
+   
       paletteDiv.style.display = 'block';
       sequenceContainer.style.display = 'block';
       phoneNumberDisplay.style.display = 'none';
@@ -116,7 +124,11 @@
     })
 
     hardButton.addEventListener('click',() => {
+      generateColorKey();
+      keyContainer.classList.remove('fade-out');
       keyContainer.style.display = 'block';
+
+      
       paletteDiv.style.display = 'block';
       sequenceContainer.style.display = 'block';
       phoneNumberDisplay.style.display = 'none';
@@ -214,7 +226,6 @@
   });
 
   resetButton.addEventListener('click', () => {
-    generateColorKey();
     sequenceSlots.forEach(slot => {
       slot.style.backgroundColor = '';
     });
